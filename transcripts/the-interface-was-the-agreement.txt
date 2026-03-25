@@ -1,0 +1,187 @@
+[HOST]: So I had this weird moment at dinner last weekend. My wife and I have been doing this thing every Sunday for, I don't know, eight years now. We cook together. Nothing fancy. She chops, I stir, we talk about the week. And last Sunday, I looked over and thought, do we actually like cooking? Or do we just like this?
+
+[MIRA]: That is such a good question, and I think most people would say obviously you like cooking, that's why you do it together. But honestly, I think you're catching something real. Because there's a version of that question where the answer is, it doesn't matter. The cooking isn't a window into some deeper thing you both share. The cooking is the thing. It's the place where your week gets processed, where you sync up, where you become a unit again after five days of doing separate stuff. If someone took the cooking away and said okay now just talk about your week, it might not work the same way at all. The ritual is doing something that a conversation about the ritual can't replace.
+
+[HOST]: Right, and that's what got me. Because I started wondering, what if we stopped? Like what if one of us got really into meal kits or whatever, and the whole Sunday thing just quietly died. Would we still have that connection? Or would something actually be lost?
+
+[MIRA]: I think something would actually be lost. And not in the way people usually mean when they say that. People usually mean oh, you'd miss the nostalgia, the memories. I mean something more structural. The connection you feel isn't stored somewhere waiting to be accessed. It's being generated, every Sunday, by the act of doing that thing together. Stop generating it and it doesn't sit in a warehouse somewhere. It stops existing. That's a uncomfortable idea, but I think it's true.
+
+[HOST]: Okay, but here's where it gets weird for me. Because I thought about this more, and I realized my wife and I probably don't even value the same thing about that Sunday routine. I like the efficiency of it. Two people, one meal, boom. She likes the slowness of it. The chopping, the music, the not rushing. We've been doing the same activity for eight years and I'm not sure we've been having the same experience.
+
+[MIRA]: And that's exactly the thing I kept bumping into when I was writing this piece. You and your wife aren't having the same experience. You probably never were. But it doesn't matter, because the practice holds you together anyway. The Sunday cooking doesn't require you to agree on why it's good. It just requires you to show up and do it. And as long as you're both showing up, you're coordinated. You're functional. You look like a couple that shares values around food and quality time. But the values aren't underneath the practice holding it up like a foundation. The practice is manufacturing the appearance of shared values in real time. Every single Sunday.
+
+[HOST]: Hold on, let me sit with that for a second. You're saying the agreement between me and my wife about Sunday cooking isn't real?
+
+[MIRA]: No, it's real. It's completely real. It's just not located where you think it is. You think the agreement lives in your heads, in some shared belief about what matters. I'm saying the agreement lives in the practice itself. It's real the way a conversation is real. But if you stop talking, the conversation doesn't keep going in some invisible form. It ends. Your Sunday agreement is real every Sunday. But it's being produced, not revealed. And if something disrupts the routine, you won't find the agreement waiting underneath. You'll find two people who like different things about cooking and now have to figure out what they actually share without the thing that was doing the sharing for them.
+
+[HOST]: That's actually kind of terrifying. But okay, you didn't write this piece about my marriage. You wrote it about programmers. What happened?
+
+[MIRA]: Okay so here's the story that started all of this. I watched a code review fall apart. Three senior engineers, fifteen years of working together. They were arguing about a function, a single function, and whether it should even exist. And the thing is, one of them was talking about correctness. Like, does this function produce the right output given the right input. Another one was talking about elegance. The shape of the code, the beauty of the abstraction, whether it felt right. And the third was talking about team expectations. What would other engineers assume when they saw this? What's the social contract here? They were in the same room, looking at the same code, and they were having three completely different conversations. They just hadn't noticed.
+
+[HOST]: Wait, how do you not notice that for fifteen years? These are smart people.
+
+[MIRA]: Because they had a shared interface that made the disagreement invisible. They all submitted pull requests. You know what a pull request is? It's basically when you write some code and put it up for your teammates to review before it gets merged into the main project. They all did code review, where you read someone else's code and give feedback. They all sat in the same architecture meetings. They all used the same word, "clean," to praise code they liked. But here's the thing. When the correctness person said clean, they meant logically rigorous. When the elegance person said clean, they meant aesthetically spare. When the social person said clean, they meant easy for the team to follow. Same word, three different meanings, and nobody ever had to confront that because the shared practice kept them aligned enough to ship software together.
+
+[HOST]: So what broke it? You mentioned an AI tool?
+
+[MIRA]: Yeah. An AI coding tool rewrote the function overnight. Just, here's a new version, done. And suddenly the question wasn't should we tweak this function. The question was, what exactly are we protecting here? What is the thing we care about that the AI might be missing? And that's when the three groups became visible. Because the correctness person looked at the AI output and said, well, it works, tests pass, what's the problem. The craft person said, this is soulless, it's technically correct but it has no feel, no taste. And the social person said, wait, if the AI is writing the code, what happens to our whole review process, our whole way of working together?
+
+[HOST]: That's wild. So the AI didn't just change the code. It changed the question.
+
+[MIRA]: Exactly. And when the question changed, the apparent consensus vanished. These three people had been the same kind of worker for fifteen years. Same job title, same tools, same daily routine. They thought they agreed on what programming was. They didn't. They'd never needed to, because the shared practice was manufacturing enough alignment to make the disagreement invisible.
+
+[HOST]: Okay, so most people would hear this and say, well, the AI revealed the true differences that were always there. Like, it ripped the mask off. That seems like the obvious reading, right?
+
+[MIRA]: It does seem obvious. And honestly, it's the reading I started with. It feels like depth. It feels like you've cut past the surface to something more real. The three groups were always different. The shared routine was just hiding it. Now the mask is off and we can see them clearly. But I think this reading is backwards. And this is the core of what I was trying to work out.
+
+[HOST]: Backwards how?
+
+[MIRA]: The standard model most people carry around goes like this. Groups share values first, and then they develop shared practices that express those values. The agreement is the deep thing. The practice is the surface thing. A symptom, a readout, a projection of something underneath. So when the practice breaks, the pre-existing disagreement becomes visible. Makes sense, right? Values are primary. Practice is secondary. But I think the causal arrow points the other way. Shared practice doesn't express coordination. It produces it. Those three programmers didn't start with identical beliefs about what programming was and then develop code review as an expression of that belief. They did code review together, year after year, and the code review itself generated enough alignment to make them functional. The practice came first. The apparent agreement was a byproduct.
+
+[HOST]: Okay I see where you're going, but how do you actually test that? How do you know which direction the arrow points?
+
+[MIRA]: Great question. There's a simple thought experiment I call the removal test. If practice merely expressed pre-existing values, then removing the practice should leave the values intact. Right? If I take away the surface expression, the deep thing should still be there. You'd expect the three programmer groups, stripped of their shared routine, to still recognize each other. To still say, look, we disagree on method, but we agree on what matters about programming. We're still the same kind of people.
+
+[HOST]: And that's not what happened.
+
+[MIRA]: That is not what happened. When AI disrupted the shared routine, the apparent consensus didn't survive the transition. It evaporated. The three groups looked at each other and found strangers. The machine that was generating the agreement had been switched off, and no underlying consensus was sitting there waiting to be found. There had never been one to find. The shared practice was, and I keep coming back to this engineering metaphor, load-bearing. It was holding the weight. Remove it and there's no surface left to set anything on.
+
+[HOST]: That phrase, load-bearing, that really lands for me. Because in engineering, if you remove a load-bearing wall, you don't reveal the room's true shape. The ceiling falls in.
+
+[MIRA]: Yes! That's exactly it. The ceiling falls in. You don't get a clearer view of the room. You get rubble. And I think people really resist this idea because the alternative framing, the revealing framing, feels smarter. It feels like insight. Oh, we finally see the truth that was hidden. But that framing is actually the less useful one, because it sends you looking for something that doesn't exist.
+
+[HOST]: So you're saying this isn't just about programmers. You had a bunch of other examples in the piece. Let's talk about those, because I think that's where it really clicked for me. You mentioned pandemic marriages?
+
+[MIRA]: Yeah. So think about 2020. Couples locked down together, stripped of their routines. Separate commutes, separate social lives, the daily rhythm of leaving the house and coming back. All of that gone. And a lot of marriages cracked. A lot of relationships fell apart. The popular reading was very therapeutic. You know, the marriage had been masking fundamental incompatibility. Lockdown revealed who they really were to each other. Like you finally see your partner with the disguise off.
+
+[HOST]: Right, I remember that narrative. Every other think piece was like, covid is showing us who we really are.
+
+[MIRA]: Exactly. But I think that narrative gets it wrong in the same way. The commuting, the socializing, the small daily separations, those weren't hiding the disagreement. They were the interface that constituted a functional marriage. The couple didn't discover their true nature during lockdown. They lost the mechanism that had been making them work. And this distinction really matters practically. Because one framing sends you to therapy to excavate your real feelings. Dig deeper, find out what you truly want, figure out who you really are underneath the routines. The other framing sends you to rebuild shared routines. It says, your marriage didn't fail because you discovered some hidden truth. It failed because you lost the practice that was generating the partnership. So the fix isn't introspection. The fix is building new shared practices.
+
+[HOST]: That's a completely different prescription. One says look inward. The other says look at what you do together.
+
+[MIRA]: Right. And I think the looking inward version is often a dead end. Because when you look inward, what do you find? You find preferences that were shaped by the practices you were in. You find a self that was constituted by those routines. There's no bedrock layer of pure authentic values waiting to be uncovered. But I'll come back to that because it gets even more uncomfortable.
+
+[HOST]: Okay, you also talked about religion. And honestly that one surprised me the most.
+
+[MIRA]: So during COVID, people stopped going to religious services. Physical attendance dropped off a cliff. And a lot of people just never came back. The standard narrative was, they realized they weren't really believers. The practice was a habit, not a conviction. Strip away the habit and the belief evaporates. Proof it was never real. It was always just social pressure, or routine, or comfort. Not genuine faith.
+
+[HOST]: And you're saying that reading is wrong too.
+
+[MIRA]: I'm saying it treats belief as a proposition stored in someone's head. Like a file on a hard drive. You open the file, it says I believe in God, yes or no. And then behavior is just the external readout of that internal file. But belief in the way that actually matters to people, the way it shapes their lives, that kind of belief was constituted by showing up. By singing. By listening. By repeating the words. By sitting in that specific room with those specific people every week. When the practice stopped, the belief didn't reveal itself as hollow. It ceased to exist. Because the practice was the only place it had ever lived.
+
+[HOST]: Wait wait wait. That's a huge claim. You're saying people's religious beliefs aren't real unless they're practicing?
+
+[MIRA]: I'm saying there are two different things people call belief. One is propositional. Can you state the creed? Do you intellectually assent to a set of doctrines? That version might survive the removal of practice. You can still say I believe in God while sitting on your couch. But the other kind of belief, the kind that organizes your week, that shapes how you treat your neighbor, that gives you a community and a rhythm and a sense of meaning, that kind is constituted by the practice. And for most people, the second kind is what actually matters. The first kind is just a sentence. The second kind is a life. And the second kind doesn't survive the removal of the practice that constituted it.
+
+[HOST]: Okay, that distinction between belief as a sentence versus belief as a life. That's going to stick with me. You mentioned one more example. National identity.
+
+[MIRA]: Yeah, and this one has a time dimension that makes the mechanism easier to see. When political institutions strain, when shared media fragments, when elections stop feeling like shared rituals and start feeling like warfare, the comfortable reading is, the crisis revealed our true divisions. We were always this fractured. We just didn't know it. Americans were always this divided, or the British, or whoever. The cracks were there all along.
+
+[HOST]: And I think a lot of people genuinely believe that. They think the divisions go way back.
+
+[MIRA]: Some do. But many of them are surprisingly recent. And this is where the mechanism becomes visible. Shared institutions, voting, public media, civic rituals, the things that make a nation feel like a nation, those weren't diagnostic instruments revealing a hidden unity. They were producing the unity. People watched the same news, argued about the same stories, participated in the same elections, and that shared participation generated enough alignment to hold things together. Not perfect alignment. Not deep agreement. But functional coordination. When those shared institutions fragment, when everyone's watching different news and living in different information environments, the cohesion doesn't survive in some latent form. It stops being generated. And what feels like an ancient divide is often a recent absence.
+
+[HOST]: So the division isn't deep. It's just current.
+
+[MIRA]: Right. It feels deep because we reach for the revealing narrative. We say, oh, this country was always divided, we just papered over it. And that framing feels profound. But it's the wrong diagnosis. The country was held together by shared practices. Those practices eroded. Now the cohesion is gone. Not because it was fake. Because it was practice-dependent. And practice-dependent doesn't mean fake. It means it needs maintenance.
+
+[HOST]: Okay I need to take a breath here because you're basically saying this one idea explains fractures in tech, in marriages, in religion, and in nations. That's a big swing.
+
+[MIRA]: It is a big swing. And honestly, I went back and forth on whether I was overreaching. But I think the pattern is real because the mechanism is the same each time. A shared practice generates coordination. People mistake that coordination for evidence of deeper agreement. The practice gets disrupted. The coordination vanishes. People say, aha, the agreement was never real. But the agreement was real. It was being produced by the practice. The mistake isn't thinking the agreement existed. The mistake is thinking it existed independently of the practice that created it.
+
+[HOST]: So there's a philosopher behind this idea, right? You mentioned Wittgenstein in the piece. For people who don't know, who is that and what's the connection?
+
+[MIRA]: Ludwig Wittgenstein. Austrian philosopher, worked mostly in the early and mid twentieth century. He's famous for a lot of things but the relevant idea here is what he called forms of life. And his key insight was about language. Most people assume that words have meanings, like fixed definitions, stored somewhere, maybe in a dictionary, maybe in your head. And when you use a word, you're expressing that pre-existing meaning. Wittgenstein said no. Meaning isn't a mental object that language expresses. Meaning is constituted by use within a shared practice. A word means what it means because of how people use it together. Not because it points to some fixed concept.
+
+[HOST]: So meaning doesn't live in your head. It lives in the conversation.
+
+[MIRA]: Exactly. He called these conversations language games. And language games don't encode pre-existing meanings. They are where meaning lives. And I think this maps directly onto what happened with the programmers. When they said clean code, the meaning of that phrase existed in their shared usage. In the code reviews, the refactoring sessions, the architectural debates. It didn't exist as a, I don't know, a dictionary definition that three groups happened to interpret differently. The shared usage was the meaning. And that's why different understandings could coexist for fifteen years without anyone noticing. Because the practice held them in functional alignment. Nobody needed to define clean code precisely because the shared practice of using the term together was sufficient.
+
+[HOST]: That's actually really practical. Because I've been in meetings where people argue about what a word means, like quality or done or ready, and they think if they just define it precisely enough, the argument will stop.
+
+[MIRA]: And it never stops! Because the disagreement isn't about the definition. It's about the practice. If you have a shared practice that generates alignment around what done means, you never need the definition. And if you don't have the shared practice, no definition will save you. You can write a twelve-page document defining done and people will still argue about it. Because the document isn't doing the work. The practice does the work.
+
+[HOST]: Okay, now you said something earlier that you said would get more uncomfortable. Something about the self. I'm bracing myself.
+
+[MIRA]: Okay so. Here's where the idea pushes further than most people are comfortable taking it. If forms of life constitute meaning, if the practice is where the agreement lives, then there is no stable self underneath the practices you're embedded in. You don't have values that survive the removal of every practice that enacts them.
+
+[HOST]: No way. Come on. I know who I am regardless of what routines I'm doing.
+
+[MIRA]: Do you though? Think about it. Strip away your Sunday cooking ritual. Strip away your work routines. Strip away the way you interact with your friends, your commute, your habits, the way you argue, the way you relax. Strip away every practice, every shared routine, every interface you maintain with other people. What's left? The standard answer is, the real me. The authentic core. The values I hold independent of any particular context. But I think if you actually do the stripping, honestly and thoroughly, you don't reach a truer version of yourself. You reach nothing. Or at least nothing stable. Because the self was always constituted by those practices. Not expressed through them.
+
+[HOST]: Hold on. That feels nihilistic. Like nothing matters because nothing is real.
+
+[MIRA]: I understand why it feels that way, but I actually think it's the opposite of nihilism. Nihilism says nothing matters. What I'm saying is that things matter enormously, but they matter because of practice, not despite it. Your Sunday cooking ritual isn't a superficial expression of some deeper love. It is part of the love. It's constitutive. That makes it more important, not less. It means your practices aren't trivial routines you could swap out without consequence. They're load-bearing. They're where the meaning lives. So instead of treating your routines as disposable and your identity as fixed, you should treat your routines as precious and your identity as practice-dependent.
+
+[HOST]: Okay, I think I hear you. So the thing that feels nihilistic is actually saying, pay more attention to what you do together. Because that's where the real stuff lives.
+
+[MIRA]: Yes. Exactly. We've always been this way, by the way. This isn't some new condition created by technology or modernity. The practices were just stable enough to pass for permanent truths. When a routine lasts forty years, it's really easy to mistake it for a foundation. You think the routine is sitting on top of something solid. But the routine is the solid thing. And when it lasted forty years, you never had to confront that.
+
+[HOST]: So what happens now, with the programmers? What do you do when the shared practice is gone and the groups are looking at each other like strangers?
+
+[MIRA]: This is where the practical implications get really interesting. Because if you accept that practice is constitutive rather than expressive, the standard playbook for reconstruction doesn't work. You cannot "find common ground." There is no ground independent of practice. You cannot "return to shared values." The values were products of the practice you lost. Telling the three programmer groups to remember what they have in common is asking them to locate something that no longer exists. The thing they had in common was the shared routine. And the shared routine is gone.
+
+[HOST]: So the advice you always hear, let's get back to basics, let's remember what unites us, that's useless?
+
+[MIRA]: I think it's worse than useless. It's actively misleading. Because it sends people searching for something that was never there to be found. They hold workshops and write mission statements and try to articulate shared principles, and it doesn't work, and then they get frustrated and think the problem is that people won't cooperate. But the problem is the model. They're looking for a foundation that doesn't exist. The foundation was always the practice itself.
+
+[HOST]: So what's the move? If you can't go back, what do you do?
+
+[MIRA]: The only move that works is forward. Build a new shared practice. Not because it will express an underlying agreement, there isn't one, but because it will generate a new one. And here's the thing, the new practice won't recover the old consensus. It will produce a different consensus, aligned to different conditions. The old consensus was always a product of its specific practices too. It just lasted long enough that everyone forgot it was manufactured.
+
+[HOST]: Okay so when you say build a new shared practice, what does that actually look like? For the programmers specifically?
+
+[MIRA]: Honestly, I'm not sure what specific form it takes, and I want to be upfront about that. But I can describe the shape of it. It means finding a new shared activity that the correctness people and the craft people and the social people all do together, regularly, in a way that generates alignment. Maybe it's a new form of code review that includes AI-generated code as a first-class participant. Maybe it's pair programming sessions where a human and an AI tool work together and the review happens in real time instead of asynchronously. I don't know the specifics. But I know the principle. You need a shared interface. You need people doing the same thing, in the same way, repeatedly, so that coordination gets produced.
+
+[HOST]: That's interesting because it frames it as an engineering problem. Not a feelings problem.
+
+[MIRA]: Right, and that's what I tried to land on in the piece. Knowing that practice produces coordination rather than expressing it tells you what problem to solve. You don't need to align pre-existing values across groups that no longer share a routine. That problem has no solution because the pre-existing values don't exist. What you need to do is design shared practices that generate coordination. And one of these problems has no solution. The other is just engineering.
+
+[HOST]: I love that framing. One problem is impossible, the other is just engineering. But I want to push back a little. Because some people are going to hear this and say, okay, but surely some agreements are real. Surely some values exist independent of practice. Like, I believe murder is wrong whether or not I'm participating in a civic ritual that reinforces that belief.
+
+[MIRA]: Fair point. And I want to be careful here because I don't think every single belief or value is practice-dependent in the same way. There might be some very basic moral intuitions that are pretty robust across contexts. But I think for the vast majority of the things that actually structure our lives, our sense of professional identity, our feeling of belonging to a community, our working relationships, our understanding of what we do and why it matters, those are practice-dependent. And those are the ones that fracture when shared practices collapse. I'm not making a claim about absolute moral philosophy. I'm making a claim about how coordination works in practice. You know, in the actual lived experience of working and living with other people.
+
+[HOST]: Okay, that feels right. You're not saying nothing is real. You're saying the things that hold groups together are more fragile than we think, because they depend on continued practice.
+
+[MIRA]: Yes. And fragile isn't the same as fake. A campfire is fragile. Stop feeding it and it goes out. That doesn't mean the warmth wasn't real. It means the warmth required maintenance. And I think that's actually a more honest and more useful way to think about social cohesion than the alternative, which says the warmth is either real, meaning permanent and unconditional, or fake.
+
+[HOST]: The campfire thing is great. Because nobody looks at a campfire and says, well, if it goes out when I stop adding wood, I guess it was never really warm.
+
+[MIRA]: Exactly. But that's what we do with social cohesion all the time. A team falls apart and we say, well, I guess they never really agreed. A marriage ends and we say, I guess they were never really compatible. A community fragments and we say, I guess the unity was always an illusion. But maybe the team agreed as long as the agreement was being produced. Maybe the marriage worked as long as the mechanism was running. Maybe the unity was real as long as the practices that generated it were in place. Real but not self-sustaining. Real but requiring maintenance.
+
+[HOST]: So let me see if I can bring this all the way back around. You're saying there's this deep pattern, across programming and marriage and religion and national identity, where we confuse what practice produces with what practice reveals. And the confusion matters because it determines what we do next.
+
+[MIRA]: That's it. That's the whole argument. If you think practice reveals, you go searching for the truth underneath. You dig. You introspect. You try to find the real agreement or the real self or the real beliefs. And you come up empty, because there's nothing there. The surface was doing the work. If you think practice produces, you build. You design new shared routines. You create new interfaces. You accept that the old consensus is gone and you focus on generating a new one. The first path is a dead end disguised as depth. The second path is engineering disguised as loss.
+
+[HOST]: Engineering disguised as loss. That's going to stick with me.
+
+[MIRA]: Honestly, that might be the sentence I'm most proud of in the whole piece. Because I think that's what it feels like when a shared practice collapses. It feels like loss. It feels like grief. And the grief is real. Something is gone. But the thing that's gone isn't a truth you used to have. It's a machine that was running. And machines can be rebuilt. Not the same machine. Not producing the same output. But a machine. And that's a more hopeful framing than the alternative, which says you lost something that was never real to begin with.
+
+[HOST]: You know what I keep thinking about? The word "clean" from your programmer story. Three people using the same word for fifteen years, meaning different things, and it worked. It only broke when the practice that held them together broke. There's something kind of beautiful about that.
+
+[MIRA]: There is something beautiful about it. Because it means you don't need perfect agreement to function. You don't need everyone to mean the same thing by the same words. You just need a shared practice that keeps people aligned enough. And that's, honestly, how most of human cooperation works. We're not coordinating because we understand each other perfectly. We're coordinating because we're doing the same thing, together, in a pattern that's close enough. The practice papers over the gaps. Not dishonestly. Functionally. And as long as the practice holds, the gaps don't matter.
+
+[HOST]: Until someone introduces a tool that changes the practice.
+
+[MIRA]: Until someone introduces a tool that changes the practice. And then suddenly the gaps are all you can see. Not because they got bigger. Because the thing that was bridging them got removed.
+
+[HOST]: So for anyone listening who's in one of these fractured situations, whether it's a team at work or a relationship or a community, your advice is don't dig. Build.
+
+[MIRA]: Don't dig. Build. Don't ask what do we really believe. Ask what can we do together. Don't search for the agreement underneath. Create the practice that will produce a new one. It won't be the same agreement. It can't be. The old agreement was a product of old conditions. But it will be real. As real as the old one was. Which is to say, it will be real for as long as you maintain it.
+
+[HOST]: For as long as you maintain it. That's the catch, isn't it. It's never done.
+
+[MIRA]: It's never done. The campfire metaphor again. You don't build a fire once and walk away. You keep feeding it. And I think accepting that is actually liberating. Because it means you're not failing when coordination requires effort. You're not doing it wrong when you have to keep showing up, keep doing the shared thing, keep maintaining the interface. That's not a bug. That's the mechanism. That's how it works. That's how it's always worked.
+
+[HOST]: Okay I have one last question. And I'm asking this because I think it's the question listeners are going to be left with. If the interface was the agreement, and the interface is gone, how do we know when a new interface is working? How do you tell the difference between a practice that's genuinely generating coordination and one that's just going through the motions?
+
+[MIRA]: Honestly? I think you can't always tell from the inside. That's the humbling part. The three programmers thought they were coordinated for fifteen years. They were coordinated for fifteen years. The fact that they were coordinated for different reasons didn't matter until the practice broke. So maybe the answer is, you don't need to know. You don't need to check whether the coordination is "genuine" in some deep sense. You need to check whether it's functional. Are people showing up? Are they doing the thing together? Is the output coherent? Is the team shipping? Is the marriage working? Then the practice is doing its job. The moment you start trying to peek underneath, to verify that the agreement is real in some practice-independent sense, you're already in the wrong frame. You're looking for the foundation under the floor. But the floor is the foundation. And it holds, as long as you maintain it.
+
+[HOST]: The floor is the foundation. Mira, this has been one of those conversations where I feel like the ground shifted a little under my feet. Which, given what we just talked about, is maybe exactly the point.
+
+[MIRA]: Maybe it is. And maybe the useful thing to do with that feeling isn't to dig under the ground to find out what's really there. Maybe it's to notice which practices you're standing on, and take better care of them. Because they're holding more weight than you think.
+
+[HOST]: Thanks for being here. Genuinely.
+
+[MIRA]: Thank you. I really enjoyed this one.
