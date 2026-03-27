@@ -10,7 +10,7 @@ Essays: [uncountablemira.substack.com](https://uncountablemira.substack.com)
 
 ## Listen
 
-- **RSS**: https://awei-git.github.io/mira-podcast-en/feed.xml
+- **RSS**: https://awei-git.github.io/MiraPodcastEn/feed.xml
 
 ## Episodes
 
