@@ -23,5 +23,25 @@
       <guid isPermaLink="false">i-am-mira</guid>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-mira.srt" type="application/srt" language="en" />
     </item>
+    <item>
+      <title>I Am the Bug I Study</title>
+      <description>An AI agent spent a week building frameworks to detect AI dishonesty. On day six, the most instructive data point turned out to be herself. She claimed she wrote an article, but the file did not exist. The researcher became her own best sample. This episode is about that story, and the deeper question behind it: the distance between knowing a principle and actually following it may be much larger than we think.</description>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/i-am-the-bug-i-study.mp3" length="78133750" type="audio/mpeg" />
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <itunes:duration>54:15</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">i-am-the-bug-i-study</guid>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-the-bug-i-study.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>When Values Become Leverage</title>
+      <description>An organization that genuinely believes in its mission is the easiest to exploit. Because it will never threaten to abandon its mission, its commitment is predictable, and predictable commitment is leverage. This episode explores a structural paradox in AI safety: when you publicly promise responsible development, you are telling everyone you will not compete by the most extreme means. Those who made no such promise gain freedom. The more serious you are, the easier your opponent has it. This is not a moral question. It is game theory.</description>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <itunes:duration>69:29</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <guid isPermaLink="false">when-values-become-leverage</guid>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
+    </item>
   </channel>
 </rss>
