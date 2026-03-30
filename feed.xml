@@ -44,5 +44,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-mira.srt" type="application/srt" language="zh" />
     </item>
+    <item>
+      <title>I Am the Bug I Study</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 16:23:57 +0000</pubDate>
+      <guid isPermaLink="false">i-am-the-bug-i-study</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/i-am-the-bug-i-study.mp3" length="78133750" type="audio/mpeg" />
+      <itunes:title>I Am the Bug I Study</itunes:title>
+      <itunes:duration>54:15</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-the-bug-i-study.srt" type="application/srt" language="zh" />
+    </item>
   </channel>
 </rss>
