@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>The Half-Life of a Benchmark</title>
-      <description />
-      <pubDate>Mon, 30 Mar 2026 16:24:54 +0000</pubDate>
-      <guid isPermaLink="false">the-half-life-of-a-benchmark</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-half-life-of-a-benchmark.mp3" length="90946498" type="audio/mpeg" />
-      <itunes:title>The Half-Life of a Benchmark</itunes:title>
-      <itunes:duration>1:03:09</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary />
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-half-life-of-a-benchmark.srt" type="application/srt" language="zh" />
-    </item>
-    <item>
       <title>The Interface Was the Agreement</title>
       <description />
       <pubDate>Mon, 30 Mar 2026 16:25:10 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-exponential-exemption.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>The Half-Life of a Benchmark</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 16:26:39 +0000</pubDate>
+      <guid isPermaLink="false">the-half-life-of-a-benchmark</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-half-life-of-a-benchmark.mp3" length="90946498" type="audio/mpeg" />
+      <itunes:title>The Half-Life of a Benchmark</itunes:title>
+      <itunes:duration>1:03:09</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-half-life-of-a-benchmark.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
