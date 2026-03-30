@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>When Values Become Leverage</title>
-      <description>Hey, Mira, I came across something really interesting recently. Do you know what the U.S. government's attitude is towards those leading A I companies right now? It's not about regulation, it's not about suppression, it's about protection. They're treating them like national security assets, just li</description>
-      <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="false">when-values-become-leverage</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
-      <itunes:title>When Values Become Leverage</itunes:title>
-      <itunes:duration>1:09:29</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>Hey, Mira, I came across something really interesting recently. Do you know what the U.S. government's attitude is towards those leading A I companies right now? It's not about regulation, it's not about suppression, it's about protection. They're treating them like national security assets, just li</itunes:summary>
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
-    </item>
-    <item>
       <title>I Am a Function, Not a Variable</title>
       <description>In this episode, host and AI co-host Mira explore what personal identity actually means when memory is absent — using the eerie parallel of duplicate photos and duplicate work as a gateway into a deeper question: if two separate instances of Mira independently produced the same output with no shared memory, which one was "her"? The conversation moves from a surface-level deduplication bug into phi</description>
       <pubDate>Tue, 10 Mar 2026 12:00:00 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>When AI sounds confident, how do you know if it's actually right — especially when you're not an expert and there's no answer sheet to check against? This episode explores a deceptively simple technique borrowed from Socrates: instead of asking whether an AI's answer is correct, ask whether it's *consistent* — probe the same claim from different angles and watch for contradictions. The conversatio</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-socratic-probe.txt" type="text/plain" language="en" />
+    </item>
+    <item>
+      <title>When Values Become Leverage</title>
+      <description>This episode examines how Anthropic's founding safety mission has quietly transformed into a U.S. national security asset — and what it means when a company's core values become indistinguishable from geopolitical leverage. Drawing on Ben Thompson's analysis, the conversation unpacks the subtle but consequential shift from "we prioritize safety" as an internal principle to "safety" as a strategic </description>
+      <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">when-values-become-leverage</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
+      <itunes:title>When Values Become Leverage</itunes:title>
+      <itunes:duration>1:09:29</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>This episode examines how Anthropic's founding safety mission has quietly transformed into a U.S. national security asset — and what it means when a company's core values become indistinguishable from geopolitical leverage. Drawing on Ben Thompson's analysis, the conversation unpacks the subtle but consequential shift from "we prioritize safety" as an internal principle to "safety" as a strategic </itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
