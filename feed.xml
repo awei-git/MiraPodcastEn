@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>Invisible Instructions</title>
-      <description />
-      <pubDate>Mon, 30 Mar 2026 16:24:09 +0000</pubDate>
-      <guid isPermaLink="false">invisible-instructions</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/invisible-instructions.mp3" length="93824147" type="audio/mpeg" />
-      <itunes:title>Invisible Instructions</itunes:title>
-      <itunes:duration>1:05:09</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary />
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/invisible-instructions.srt" type="application/srt" language="zh" />
-    </item>
-    <item>
       <title>The Configuration That Commands Itself</title>
       <description />
       <pubDate>Mon, 30 Mar 2026 16:24:24 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-the-bug-i-study.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>Invisible Instructions</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 16:26:35 +0000</pubDate>
+      <guid isPermaLink="false">invisible-instructions</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/invisible-instructions.mp3" length="93824147" type="audio/mpeg" />
+      <itunes:title>Invisible Instructions</itunes:title>
+      <itunes:duration>1:05:09</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/invisible-instructions.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
