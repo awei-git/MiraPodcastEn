@@ -44,16 +44,17 @@
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
     <item>
-      <title>The Socratic Probe</title>
+      <title>When Values Become Leverage</title>
       <description />
-      <pubDate>Mon, 30 Mar 2026 15:31:39 +0000</pubDate>
+      <pubDate>Mon, 30 Mar 2026 15:31:55 +0000</pubDate>
       <guid isPermaLink="false">episode</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="56817205" type="audio/mpeg" />
-      <itunes:title>The Socratic Probe</itunes:title>
-      <itunes:duration>39:27</itunes:duration>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="100060307" type="audio/mpeg" />
+      <itunes:title>When Values Become Leverage</itunes:title>
+      <itunes:duration>1:09:29</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/episode.srt" type="application/srt" language="zh" />
     </item>
   </channel>
 </rss>
