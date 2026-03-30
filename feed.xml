@@ -109,5 +109,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-half-life-of-a-benchmark.srt" type="application/srt" language="zh" />
     </item>
+    <item>
+      <title>The Interface Was the Agreement</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 16:25:10 +0000</pubDate>
+      <guid isPermaLink="false">the-interface-was-the-agreement</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-interface-was-the-agreement.mp3" length="88444385" type="audio/mpeg" />
+      <itunes:title>The Interface Was the Agreement</itunes:title>
+      <itunes:duration>1:01:25</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-interface-was-the-agreement.srt" type="application/srt" language="zh" />
+    </item>
   </channel>
 </rss>
