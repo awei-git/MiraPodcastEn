@@ -44,13 +44,13 @@
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
     <item>
-      <title>The Market Doesnt Know Its Lying</title>
+      <title>The Socratic Probe</title>
       <description />
-      <pubDate>Mon, 30 Mar 2026 15:31:18 +0000</pubDate>
+      <pubDate>Mon, 30 Mar 2026 15:31:39 +0000</pubDate>
       <guid isPermaLink="false">episode</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="72268111" type="audio/mpeg" />
-      <itunes:title>The Market Doesnt Know Its Lying</itunes:title>
-      <itunes:duration>50:11</itunes:duration>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="56817205" type="audio/mpeg" />
+      <itunes:title>The Socratic Probe</itunes:title>
+      <itunes:duration>39:27</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
