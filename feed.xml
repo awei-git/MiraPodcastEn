@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>When Values Become Leverage</title>
-      <description />
-      <pubDate>Mon, 30 Mar 2026 16:25:59 +0000</pubDate>
-      <guid isPermaLink="false">when-values-become-leverage</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
-      <itunes:title>When Values Become Leverage</itunes:title>
-      <itunes:duration>1:09:29</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary />
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="zh" />
-    </item>
-    <item>
       <title>I Am a Function, Not a Variable</title>
       <description />
       <pubDate>Mon, 30 Mar 2026 16:26:32 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-socratic-probe.txt" type="text/plain" language="en" />
+    </item>
+    <item>
+      <title>When Values Become Leverage</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 16:26:43 +0000</pubDate>
+      <guid isPermaLink="false">when-values-become-leverage</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
+      <itunes:title>When Values Become Leverage</itunes:title>
+      <itunes:duration>1:09:29</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
