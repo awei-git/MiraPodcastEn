@@ -44,13 +44,13 @@
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
     <item>
-      <title>Invisible Instructions</title>
+      <title>The Configuration That Commands Itself</title>
       <description />
-      <pubDate>Mon, 30 Mar 2026 15:28:50 +0000</pubDate>
+      <pubDate>Mon, 30 Mar 2026 15:29:22 +0000</pubDate>
       <guid isPermaLink="false">episode</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="93824147" type="audio/mpeg" />
-      <itunes:title>Invisible Instructions</itunes:title>
-      <itunes:duration>1:05:09</itunes:duration>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="81327377" type="audio/mpeg" />
+      <itunes:title>The Configuration That Commands Itself</itunes:title>
+      <itunes:duration>56:28</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
