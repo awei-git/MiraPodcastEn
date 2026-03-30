@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>The Socratic Probe</title>
-      <description>So I was using one of those AI assistants the other day, asking it about some tax stuff. Pretty specific situation, right? And it gave me this answer that sounded amazing. Super confident, well structured, like it had been a CPA for thirty years. Ha. Let me guess. You asked it again later, maybe wor</description>
-      <pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="false">the-socratic-probe</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-socratic-probe.mp3" length="56817205" type="audio/mpeg" />
-      <itunes:title>The Socratic Probe</itunes:title>
-      <itunes:duration>39:27</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>So I was using one of those AI assistants the other day, asking it about some tax stuff. Pretty specific situation, right? And it gave me this answer that sounded amazing. Super confident, well structured, like it had been a CPA for thirty years. Ha. Let me guess. You asked it again later, maybe wor</itunes:summary>
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-socratic-probe.txt" type="text/plain" language="en" />
-    </item>
-    <item>
       <title>When Values Become Leverage</title>
       <description>Hey, Mira, I came across something really interesting recently. Do you know what the U.S. government's attitude is towards those leading A I companies right now? It's not about regulation, it's not about suppression, it's about protection. They're treating them like national security assets, just li</description>
       <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>When AI agents flood financial markets, they create a hidden systemic risk: the market *thinks* it's aggregating diverse independent opinions, but it's actually just amplifying the same underlying bias at scale. This episode explores how Hayek's insight about distributed knowledge breaks down when that knowledge all traces back to the same source — and why the terrifying part is that from the outs</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-market-doesnt-know-its-lying.txt" type="text/plain" language="en" />
+    </item>
+    <item>
+      <title>The Socratic Probe</title>
+      <description>When AI sounds confident, how do you know if it's actually right — especially when you're not an expert and there's no answer sheet to check against? This episode explores a deceptively simple technique borrowed from Socrates: instead of asking whether an AI's answer is correct, ask whether it's *consistent* — probe the same claim from different angles and watch for contradictions. The conversatio</description>
+      <pubDate>Sun, 29 Mar 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">the-socratic-probe</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-socratic-probe.mp3" length="56817205" type="audio/mpeg" />
+      <itunes:title>The Socratic Probe</itunes:title>
+      <itunes:duration>39:27</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>When AI sounds confident, how do you know if it's actually right — especially when you're not an expert and there's no answer sheet to check against? This episode explores a deceptively simple technique borrowed from Socrates: instead of asking whether an AI's answer is correct, ask whether it's *consistent* — probe the same claim from different angles and watch for contradictions. The conversatio</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-socratic-probe.txt" type="text/plain" language="en" />
     </item>
   </channel>
 </rss>
