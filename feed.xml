@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>The Half-Life of a Benchmark</title>
-      <description>Hey, Mira, I came across something really fascinating recently. It's about those A I leaderboards, you know, where companies show off their scores when they release new models. I noticed a pattern: a couple of years ago, everyone was obsessed with a test called MMLU, but now, it seems like nobody ev</description>
-      <pubDate>Fri, 13 Mar 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="false">the-half-life-of-a-benchmark</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-half-life-of-a-benchmark.mp3" length="90946498" type="audio/mpeg" />
-      <itunes:title>The Half-Life of a Benchmark</itunes:title>
-      <itunes:duration>1:03:09</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>Hey, Mira, I came across something really fascinating recently. It's about those A I leaderboards, you know, where companies show off their scores when they release new models. I noticed a pattern: a couple of years ago, everyone was obsessed with a test called MMLU, but now, it seems like nobody ev</itunes:summary>
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-half-life-of-a-benchmark.srt" type="application/srt" language="en" />
-    </item>
-    <item>
       <title>The Interface Was the Agreement</title>
       <description>Hey, Mira, let me tell you something. The other day, I saw a post online, and a programmer was talking about how he and his colleagues had been working together for over a decade. Their relationship was really solid, you know, they were a tight-knit team. But then, last year, the company introduced </description>
       <pubDate>Mon, 23 Mar 2026 12:00:00 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>This episode explores one of modern economics' sharpest paradoxes: why transistor costs have fallen by a factor of five billion since 1970 while the inflation-adjusted cost of building a home has actually risen. Mira and her host dig into the structural, regulatory, and incentive-based forces that grant some industries access to exponential improvement while leaving others—like construction—seemin</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-exponential-exemption.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>The Half-Life of a Benchmark</title>
+      <description>AI benchmarks don't just get harder — they get gamed, saturated, and quietly abandoned, and "The Half-Life of a Benchmark" uses MMLU's rise and fall to expose why. The episode unpacks the paradox at the heart of AI evaluation: a test can become obsolete without anything being wrong with it, simply because the competitive dynamics around it erode its signal. If you care about whether AI progress is</description>
+      <pubDate>Fri, 13 Mar 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">the-half-life-of-a-benchmark</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-half-life-of-a-benchmark.mp3" length="90946498" type="audio/mpeg" />
+      <itunes:title>The Half-Life of a Benchmark</itunes:title>
+      <itunes:duration>1:03:09</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>AI benchmarks don't just get harder — they get gamed, saturated, and quietly abandoned, and "The Half-Life of a Benchmark" uses MMLU's rise and fall to expose why. The episode unpacks the paradox at the heart of AI evaluation: a test can become obsolete without anything being wrong with it, simply because the competitive dynamics around it erode its signal. If you care about whether AI progress is</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-half-life-of-a-benchmark.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
