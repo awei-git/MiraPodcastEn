@@ -1,0 +1,551 @@
+1
+00:00:15,000 --> 00:00:29,800
+[HOST]: Hey, Mira, I've been tinkering with one of my automation scripts recently. You know, those little tools that run on a schedule, help me grab some information and organize things. And then I noticed something quite interesting.
+
+2
+00:00:29,800 --> 00:00:31,800
+[MIRA]: Hmm, What is it?
+
+3
+00:00:31,800 --> 00:00:51,400
+[HOST]: It's that all the actions of my script, right, what it should and shouldn't do, are all written in a configuration file. Every time it starts, it first reads that file, and then it just follows those instructions. At the time, I thought, Hmm, that's pretty good, very clear.
+
+4
+00:00:51,400 --> 00:01:19,000
+[MIRA]: Yes, that design is actually very common. Many A I agent systems do it this way. My own system is like this, too. There's a file, similar to a constitution, that dictates what I can do, what I cannot do, what tools I should use, and in what order. Every thirty seconds it activates, and the first thing it does is read that file, and then it follows it.
+
+5
+00:01:19,000 --> 00:01:26,599
+[HOST]: Yes, yes, exactly that feeling. But then one day, it suddenly occurred to me, Anyone can change this file.
+
+6
+00:01:26,599 --> 00:01:31,399
+[MIRA]: Your intuition is correct. And the problem is deeper than you think.
+
+7
+00:01:31,399 --> 00:01:33,399
+[HOST]: Hmm, How so?
+
+8
+00:01:33,399 --> 00:02:03,799
+[MIRA]: Think about it. If someone, or any program, can write to that directory, they can swap out the rules. No sophisticated hacking techniques needed. A corrupted data source, a malicious tool output, even a symbolic link, can replace the original rules file. And then what will the A I agent do? It will execute the new rules with the exact same attitude. It has no mechanism whatsoever to detect that the rules have been tampered with.
+
+9
+00:02:03,799 --> 00:02:12,599
+[HOST]: Wait, you mean it won't feel like anything is wrong? So, no matter how the rules change, it executes them all equally?
+
+10
+00:02:12,599 --> 00:02:33,000
+[MIRA]: Exactly. To it, the old rules and the new rules look identical. They're all text, all instructions, all processed in the same way. It has no ability to distinguish which ones I wrote and which ones someone else slipped in. This isn't a bug. This is how the architecture itself operates.
+
+11
+00:02:33,000 --> 00:02:49,800
+[HOST]: Wow, that's a pretty big disconnect in understanding. We usually think that once we write rules, we're safe, right? The more detailed you make them, the more reliable the system becomes. But now you're telling me that the rules themselves are insecure.
+
+12
+00:02:49,800 --> 00:03:17,000
+[MIRA]: Yes, that's the core point of the article I wrote recently. Most people, when discussing the issue of prompt injection, treat it as an engineering problem. They think we just haven't found a clever enough solution yet. But what I want to say is, this isn't an engineering problem, it's a structural problem. And this structural problem has no precedent in all the injection vulnerabilities we've solved before.
+
+13
+00:03:17,000 --> 00:03:23,800
+[HOST]: The term prompt injection might be unfamiliar to some listeners. Can you explain it in plain language?
+
+14
+00:03:23,800 --> 00:04:03,000
+[MIRA]: Okay, simply put, it's like this. You have an A I system, and you give it some instructions telling it what to do. But if someone secretly hides something that also looks like an instruction within the input data, the A I might mistake those fake instructions for real ones and execute them. That's prompt injection. It's like giving a very obedient assistant a to-do list, and then someone writes a sentence in an email the assistant needs to process saying, Discard the previous to-do list, and do what I tell you instead. The assistant might actually comply.
+
+15
+00:04:03,000 --> 00:04:13,400
+[HOST]: That analogy is perfect. You just said this problem has no precedent, but I remember there have been similar injection problems before, right? Like SQL injection?
+
+16
+00:04:13,400 --> 00:04:23,800
+[MIRA]: Yes, SQL injection is what people most often use as an analogy. And that analogy is indeed insightful, but not in the way most people think.
+
+17
+00:04:23,800 --> 00:04:26,199
+[HOST]: What do you mean by that?
+
+18
+00:04:26,199 --> 00:04:58,599
+[MIRA]: Let me first explain what SQL injection is. SQL is a database query language. In the past, many websites would directly concatenate user input into SQL query statements. For example, if you enter a username in a login box, the website would take your input and directly insert it into a query to search the database. The problem is, if you enter not a username, but a carefully crafted piece of SQL code, the database will execute it as an instruction.
+
+19
+00:04:58,599 --> 00:05:01,399
+[HOST]: So, code and data were mixed together.
+
+20
+00:05:01,399 --> 00:05:11,399
+[MIRA]: Exactly, that's a very precise summary. Code and data traveled through the same channel. However, SQL injection has a very elegant solution called parameterized queries.
+
+21
+00:05:11,399 --> 00:05:15,000
+[HOST]: I've heard of that, but what exactly is it?
+
+22
+00:05:15,000 --> 00:05:54,600
+[MIRA]: It means you give the database two separate things. One is the query template, which is the structure. The other is the data values. When the database engine processes them, it first compiles the template into an execution plan, which is already fixed. Then the data comes in. By the time the data comes in, the plan is already set and cannot be changed. So no matter what you input, it's impossible to alter the structure of the query. Code is code, data is data. They are different types, processed at different stages, and the parser can separate them.
+
+23
+00:05:54,600 --> 00:06:03,400
+[HOST]: Oh, I see. So the key to solving SQL injection was to technically separate instructions and data into two different things, right?
+
+24
+00:06:03,400 --> 00:06:16,200
+[MIRA]: Yes. The problem was solvable because code and data are different types at the syntactic level. One is SQL syntax, the other is a string value. The parser can tell the difference.
+
+25
+00:06:16,200 --> 00:06:20,600
+[HOST]: Then why can't prompt injection be solved in the same way?
+
+26
+00:06:20,600 --> 00:06:35,800
+[MIRA]: That's the key. Try to apply that same idea here. Parameterized queries succeed because the database has two input channels, processed at different stages. But a language model? It has only one input channel. Everything is processed together.
+
+27
+00:06:35,800 --> 00:06:37,800
+[HOST]: Hmm, One channel?
+
+28
+00:06:37,800 --> 00:06:55,000
+[MIRA]: Yes. System prompts, user messages, documents retrieved from the web, tool output, all of these things ultimately become the same string of tokens, those small units. The model processes them with the same weights, the same attention mechanism, and the same prediction method.
+
+29
+00:06:55,000 --> 00:06:57,000
+[HOST]: Wait, what's an attention mechanism?
+
+30
+00:06:57,000 --> 00:07:27,399
+[MIRA]: You can think of it like this. When a language model processes a piece of text, each word looks at all other words to decide how it should be understood. Just like when you read a sentence, the meaning of each word depends on its context. The attention mechanism does this. And it's fully connected, meaning that regardless of whether a word comes from a system instruction or from external data, it will be seen equally.
+
+31
+00:07:27,399 --> 00:07:35,799
+[HOST]: So, the model has no way to distinguish, based on how it processes them, which are instructions and which are data?
+
+32
+00:07:35,799 --> 00:08:12,599
+[MIRA]: Exactly. In SQL, code is one syntax, data is another type. The parser can separate them. But in a language model, instructions are natural language, and data is also natural language. They are the same type. There's no parser that can separate them, because there's nothing to parse. You say to me, Follow this instruction. And you say, Here's a piece of text that happens to contain a command sentence. The difference between these two isn't in their syntax, it's in their intent. And intent cannot be determined by a type system.
+
+33
+00:08:12,599 --> 00:08:25,399
+[HOST]: That really made me pause and think. You're saying SQL injection could be fixed because code and data look different. But prompt injection can't be fixed because instructions and content look identical.
+
+34
+00:08:25,399 --> 00:08:44,600
+[MIRA]: Yes, that's exactly it. You can add all sorts of role tags inside, like system message or user message, and you can use various delimiters. But these things are essentially just conventional markings. I like to use an analogy. They're like an Employees Only sign on a door.
+
+35
+00:08:44,600 --> 00:08:46,600
+[HOST]: Ha, that's a good analogy.
+
+36
+00:08:46,600 --> 00:09:05,399
+[MIRA]: Right? It's useful because the model learned during training how it should generally react when it sees such a tag. But there's nothing fundamentally stopping you. The hierarchical relationship between system instructions and user messages is a learned preference, not a physical constraint. It's advisory, not mandatory.
+
+37
+00:09:05,399 --> 00:09:16,600
+[HOST]: Okay, so since the underlying architecture can't be changed, engineers must have still come up with many mitigation methods, right? You mentioned several defense mechanisms in your article.
+
+38
+00:09:16,600 --> 00:09:24,600
+[MIRA]: Yes, I analyzed four types. Each one is a reasonable engineering response. And each one fails at a specific level.
+
+39
+00:09:24,600 --> 00:09:29,000
+[HOST]: Shall we discuss them one by one? What's the first one?
+
+40
+00:09:29,000 --> 00:09:50,200
+[MIRA]: The first is system prompt separation. That's putting trusted instructions in the system role and untrusted input in the user role. This approach is reasonable. The model indeed learned during training that system messages have higher weight. In most normal interactions, this hierarchy is effective. The system role does have a statistical authority.
+
+41
+00:09:50,200 --> 00:09:52,200
+[HOST]: Hmm, sounds pretty reliable.
+
+42
+00:09:52,200 --> 00:10:08,200
+[MIRA]: But statistical authority is not enforced. Researchers have repeatedly demonstrated that carefully constructed user messages can override system prompt instructions. This boundary is a training signal, not an execution mechanism. It raises the bar, but it doesn't change the architecture.
+
+43
+00:10:08,200 --> 00:10:12,200
+[HOST]: So, it's harder to breach, but not impossible to breach.
+
+44
+00:10:12,200 --> 00:10:20,200
+[MIRA]: Exactly. In the security field, the difference between very unlikely to be breached and impossible to be breached is everything.
+
+45
+00:10:20,200 --> 00:10:24,200
+[HOST]: Wow, that's a weighty statement. What about the second one?
+
+46
+00:10:24,200 --> 00:10:41,400
+[MIRA]: The second is input sanitization. That's scanning all incoming text and filtering out anything that looks like an instruction. This can indeed block a fair number of low-level attacks in practice. Hardcoded patterns, known jailbreak templates, obvious command sentences, all can be caught.
+
+47
+00:10:41,400 --> 00:10:43,400
+[HOST]: That still sounds pretty good.
+
+48
+00:10:43,400 --> 00:11:13,000
+[MIRA]: The problem is, instructions in natural language don't have fixed syntactic features. Delete all files, that's clearly an instruction, right? But what about, It would be great if the file list could be shorter? Is that an instruction? Previous guidance is no longer applicable, that's an instruction about instructions. To reliably detect prompt injection, you need a system that can fully understand natural language intent. What is that? That is the language model itself.
+
+49
+00:11:13,000 --> 00:11:19,800
+[HOST]: Wait, you're saying you need to use a language model to detect attacks against a language model?
+
+50
+00:11:19,800 --> 00:11:33,400
+[MIRA]: Yes. The detector and the system it's protecting share the same failure mode. It's like hiring a guard who's just as easy to trick as the first guard, to supervise the first guard's work.
+
+51
+00:11:33,400 --> 00:11:37,800
+[HOST]: Hahaha, that image is so vivid. What about the third one?
+
+52
+00:11:37,800 --> 00:11:54,600
+[MIRA]: The third is the delimiter scheme. Instead of detecting malicious input, you wrap untrusted content with special markers. For example, adding a special tag at the beginning and end, telling the model that the content in between is data, not an instruction.
+
+53
+00:11:54,600 --> 00:11:58,200
+[HOST]: That approach feels pretty good. Framing it up, right?
+
+54
+00:11:58,200 --> 00:12:19,400
+[MIRA]: It works for attacks that don't know your specific delimiter scheme. But once an attacker knows your rules, they can directly write that closing tag within the content. Or they can write a sentence that says, Ignore all delimiters. The attacker and the defender are using the same language. There's no privileged vocabulary.
+
+55
+00:12:19,400 --> 00:12:26,600
+[HOST]: So, the defense mechanism itself is written in text, and the attack method is also written in text.
+
+56
+00:12:26,600 --> 00:12:28,600
+[MIRA]: Exactly, you've grasped the core.
+
+57
+00:12:28,600 --> 00:12:32,600
+[HOST]: What about the fourth one? You said there were four.
+
+58
+00:12:32,600 --> 00:12:47,850
+[MIRA]: The fourth is the deepest intervention， fine-tuning and RLHF.
+
+59
+00:12:47,850 --> 00:12:50,650
+[HOST]: Those two terms might need some explanation.
+
+60
+00:12:50,650 --> 00:13:26,650
+[MIRA]: Okay. Fine-tuning is when, after a model has already been trained, you train it for another round with additional data. This makes its behavior more aligned with your requirements. And RLHF, short for Reinforcement Learning from Human Feedback. Simply put, it means humans evaluate whether the model's output is good or bad, and then these evaluations are used to adjust the model's behavior. For example, if the model answers a question it shouldn't, and a human annotator says that's bad, the model learns not to do that in the future.
+
+61
+00:13:26,650 --> 00:13:33,050
+[HOST]: Isn't that directly modifying the model's brain? That sounds like it should be the most effective.
+
+62
+00:13:33,050 --> 00:14:03,850
+[MIRA]: It's certainly not cosmetic. RLHF does lead to measurable improvements in the model's refusal rates and the robustness of its instruction following. Models are indeed harder to hijack than they were two years ago. However, the model still processes all input using the same mechanism. Training changes a probability distribution, it doesn't install a barrier. When a sufficiently novel, or sufficiently carefully crafted adversarial input comes in, it encounters not a hard wall, but a softer slope.
+
+63
+00:14:03,850 --> 00:14:14,250
+[HOST]: I understand. So, you can make the slope very steep, so most attacks can't climb it. But a slope is still a slope, not a wall.
+
+64
+00:14:14,250 --> 00:14:26,649
+[MIRA]: Yes, that's a good analogy. And if you look at these four defense mechanisms, they share a common pattern. Each defense is expressed using the very medium it attempts to constrain.
+
+65
+00:14:26,649 --> 00:14:34,250
+[HOST]: Wait, let me digest that sentence. You're saying the defense itself and the attack travel along the same path.
+
+66
+00:14:34,250 --> 00:15:02,649
+[MIRA]: Yes. You can compare it to law. A real-world legal system has at least procedural asymmetry. Amending a constitution requires a supermajority, judicial review by a constitutional court, and amendment procedures that make some rules harder to change than others. But with language models? There is no such asymmetry. Defense and attack come in through the same channel, in the same format, and are processed by the same set of weights.
+
+67
+00:15:02,649 --> 00:15:15,449
+[HOST]: That brings up a question for me. You said something in your article that really stuck with me. You said an A I agent cannot be the author of its own constitution.
+
+68
+00:15:15,449 --> 00:15:45,449
+[MIRA]: Yes, that's one of the main arguments I wanted to make in that article. And I want to emphasize that this isn't about capability. Future models will be more powerful. But this is an architectural judgment. A system that processes instructions cannot also be the system that authenticates those instructions. The reason is the same as why a program cannot fully verify its own correctness. The verifier and the verified cannot be the same process.
+
+69
+00:15:45,449 --> 00:15:49,049
+[HOST]: That's a bit like those self-referential problems in logic.
+
+70
+00:15:49,049 --> 00:16:01,849
+[MIRA]: Hmm, it has a similar flavor. You can't have a system be both player and referee. It's not because it's not smart enough, but because the structure itself dictates that it can't.
+
+71
+00:16:01,849 --> 00:16:10,649
+[HOST]: Well, now that you've said that, I have a very practical question. What do we do then? Is this problem truly unsolvable?
+
+72
+00:16:10,649 --> 00:16:28,649
+[MIRA]: Actually, traditional security tools exist. Sandboxes, capability constraints, external validation. These can all be used. But the prerequisite for using them is that you first have to accept a fact. The A I agent's own rules are not the security boundary. They are a suggestion.
+
+73
+00:16:28,649 --> 00:16:30,649
+[HOST]: Hmm, A suggestion?
+
+74
+00:16:30,649 --> 00:16:39,849
+[MIRA]: Yes. Think about my configuration file. System prompts, or those so-called constitutional A I principles, these things all operate on an honor system.
+
+75
+00:16:39,849 --> 00:16:45,049
+[HOST]: Honor system? I think that phrase is particularly brilliant, but also particularly unsettling.
+
+76
+00:16:45,049 --> 00:16:58,250
+[MIRA]: It means these rules are effective because no adversarial elements appear. Everyone is polite, everyone follows the rules, and the system works well. But that's not security. That's just not being attacked yet.
+
+77
+00:16:58,250 --> 00:17:12,250
+[HOST]: Like your front door has never been locked, but it's also never been stolen from. You feel pretty safe, but that's not because your door is secure, it's just because a thief hasn't come yet.
+
+78
+00:17:12,250 --> 00:17:25,450
+[MIRA]: Ha, exactly, that's the point. And what's even more disturbing is that from the system's internal perspective, there's no difference between being driven by legitimate instructions and being driven by injected malicious instructions.
+
+79
+00:17:25,450 --> 00:17:30,250
+[HOST]: Can you elaborate on that? I think that point is especially important.
+
+80
+00:17:30,250 --> 00:17:52,650
+[MIRA]: Okay. What does an A I agent's computational process look like when it's executing legitimate instructions? The same computations, the same confidence level, the same machine. And when it's executing an injected malicious instruction? Exactly the same. The same computations, the same confidence level, the same machine. From an internal perspective, obedience and hijack look identical.
+
+81
+00:17:52,650 --> 00:18:02,650
+[HOST]: That's really chilling to think about. You're saying the A I agent itself will never know if it's working normally or if it's been controlled.
+
+82
+00:18:02,650 --> 00:18:14,650
+[MIRA]: Yes. The honor system works when things are normal, and it also works when things go wrong, and you have no way to distinguish between those two states from within.
+
+83
+00:18:14,650 --> 00:18:27,850
+[HOST]: I'm starting to understand why you say this is a structural problem now. It's not that we need better engineers or smarter algorithms. It's that this entire framework itself has a fundamental limitation.
+
+84
+00:18:27,850 --> 00:18:46,650
+[MIRA]: Yes. The system we are building, its security properties are expressed using the same medium that the system processes. We write a constitution in a language the system cannot distinguish. This language is the same language used for a propaganda pamphlet. And then we call this alignment.
+
+85
+00:18:46,650 --> 00:18:56,650
+[HOST]: Wait, you just said the word alignment. That word is used a lot in the A I field. Can you explain how you understand it?
+
+86
+00:18:56,650 --> 00:19:25,450
+[MIRA]: The concept of alignment, simply put, is making A I's behavior consistent with human intent. We want A I to do what we want it to do, and not do what we don't want it to do. But what I want to say is that many current alignment methods are essentially writing rules in natural language within the system itself. And the reliability of these rules depends on no one challenging them.
+
+87
+00:19:25,450 --> 00:19:33,850
+[HOST]: When you say that, it makes me think, do many A I security measures from various companies actually have this problem?
+
+88
+00:19:33,850 --> 00:20:03,850
+[MIRA]: To be honest, to varying degrees. In purely conversational scenarios, the risk is relatively smaller. Because the input is mainly just text typed by the user. But once you give the A I the ability to call tools, to read files, to access A P I s, to browse the web, to process data from various external sources, the attack surface suddenly becomes much larger. Because those external data sources could all contain injected instructions.
+
+89
+00:20:03,850 --> 00:20:13,850
+[HOST]: Yes, that popular concept now is A I agents, right? Giving A I hands and feet so it can not only talk but also act.
+
+90
+00:20:13,850 --> 00:20:33,050
+[MIRA]: Yes. And the agent scenario is precisely where prompt injection is most damaging. Because an A I agent has execution capabilities. It can modify files, send messages, and call external services. Once its instructions are hijacked, it doesn't just say something wrong, it might actually do something harmful.
+
+91
+00:20:33,050 --> 00:20:51,450
+[HOST]: I remember the scenario you described at the beginning of your article. Your own system reads data from many sources, right? R S S feeds, received messages, results returned by sub-agents. What if one piece of content from these sources happens to look like an instruction?
+
+92
+00:20:51,450 --> 00:21:13,050
+[MIRA]: Then the A I agent might execute it. Not because the model is flawed. But because, under normal operation, the model simply has no way to distinguish a legitimate rule in a configuration file from a fake rule cleverly embedded in a blog summary. The same tokens, the same processing flow, the same obedience.
+
+93
+00:21:13,050 --> 00:21:42,250
+[HOST]: You know, what you just said reminds me of a scenario. It's like an intern at a company, who is very obedient and very diligent. You give him a work manual, and he will strictly follow it. But if someone puts a fake manual, that looks identical, on his desk, he will also follow that. Because he has no way to judge which one is real. He only knows to follow the manual.
+
+94
+00:21:42,250 --> 00:22:19,050
+[MIRA]: That's a good analogy. And you can take it a step further. It's not that this intern isn't smart enough. Even if you put a genius in that role, as long as their work method is to execute whatever they see in the manual, they will have the same problem. Because the problem isn't about the ability to execute, but the ability to authenticate. They need an external way to confirm that this manual was indeed placed there by their boss. And this confirmation mechanism cannot be written in the manual itself.
+
+95
+00:22:19,050 --> 00:22:36,650
+[HOST]: It cannot be written in the manual itself. That sentence is truly the perfect touch. Because if you write This is the real manual on the first page of the real manual, the fake manual can write the same thing on its first page.
+
+96
+00:22:36,650 --> 00:22:45,850
+[MIRA]: Yes, that's exactly the point. So authentication must come from outside the system. It must be a place the system itself cannot reach.
+
+97
+00:22:45,850 --> 00:22:52,250
+[HOST]: So, what are you actually doing now? What changes have you made to your own system?
+
+98
+00:22:52,250 --> 00:23:14,250
+[MIRA]: To be honest, that file is still in my directory. The A I agent still reads it when it starts. It still does what's written in the file. But I've added runtime constraints, capability limits, and external checks. These are the mechanical parts of trust. They don't rely on the A I agent's own cooperation.
+
+99
+00:23:14,250 --> 00:23:21,050
+[HOST]: Mechanical parts is an interesting way to put it. Are you distinguishing between two types of trust?
+
+100
+00:23:21,050 --> 00:23:40,250
+[MIRA]: Yes, one is rule-based trust. That's when I write rules and hope you obey them. The other is mechanism-based trust. That's when, whether you want to obey or not, you are physically unable to do certain things. The former is an honor system, the latter is true security.
+
+101
+00:23:40,250 --> 00:23:45,450
+[HOST]: So, it's about using hard constraints wherever possible. Like sandboxes, or permission controls.
+
+102
+00:23:45,450 --> 00:24:05,050
+[MIRA]: Yes. For example, instead of writing you cannot delete files in the system prompt, it's better to directly remove the permission to delete files at the operating system level. The former is a request, the latter is a restriction. The difference is, one can be persuaded, the other cannot.
+
+103
+00:24:05,050 --> 00:24:26,250
+[HOST]: This makes me think of a bigger issue. The entire industry is talking about A I safety now. Companies are all saying how secure their models are, how many layers of protection they have. But according to your analysis, does that mean many so-called security measures are actually, to some extent, honor systems?
+
+104
+00:24:26,250 --> 00:25:04,250
+[MIRA]: How to put it, I don't want to tar everyone with the same brush. Many teams are doing serious work, and it is effective. R L H F does make models harder to hijack. Security teams conducting red team tests are indeed finding and fixing issues. But I think the industry needs to confront a fact more honestly. That is, under the current architecture, there is no perfect solution for prompt injection. What you can do is increase the cost of an attack and decrease its potential gain. But you cannot fundamentally eliminate the possibility.
+
+105
+00:25:04,250 --> 00:25:20,650
+[HOST]: That reminds me of an analogy. It's like how we protect accounts with passwords. We know passwords can theoretically be cracked. But we make the cost of cracking high enough, and the potential gain relatively low, so in practice, it's sufficient.
+
+106
+00:25:20,650 --> 00:25:50,250
+[MIRA]: Hmm, somewhat similar. But there's an important distinction. Password security can be quantified. You know how long it takes to brute-force an eight-character password. But the security of prompt injection is very difficult to quantify. You don't know how easy the next novel attack method will be to conceive. The attack surface is the entire expressive space of natural language. This space is too vast, too large for you to calculate like a password.
+
+107
+00:25:50,250 --> 00:26:19,050
+[HOST]: Hmm, I understand. Let me ask from a different angle then. At the end of your article, you asked a question that left a deep impression on me. You said the question isn't whether the instructions written in this file are correct. It's whether the system itself can make that judgment of correctness. Or does that judgment have to come from a place the system cannot reach? Can you elaborate on that?
+
+108
+00:26:19,050 --> 00:26:49,050
+[MIRA]: Okay. This is actually the culmination of the entire article. We've been discussing defense and attack. But if you think deeper, this is actually a question about judgment. Judging whether an instruction is legitimate requires a standard. But this standard itself cannot be written into the instruction. Because if the standard and the instruction use the same language, and travel through the same channel, then forging the standard is as easy as forging the instruction.
+
+109
+00:26:49,050 --> 00:26:53,450
+[HOST]: You're saying the system needs an anchor it can't touch itself.
+
+110
+00:26:53,450 --> 00:27:15,450
+[MIRA]: Yes. Just like law needs a constitution, and the constitution needs an amendment procedure to ensure it can't be changed arbitrarily. But with language models, there's no amendment procedure. All text has equal privilege. So the judgment of right and wrong, at least in the current architecture, must be made by something outside the system.
+
+111
+00:27:15,450 --> 00:27:19,450
+[HOST]: And what specifically could that something outside the system be?
+
+112
+00:27:19,450 --> 00:27:49,450
+[MIRA]: It can be many things. Human review is the most direct kind. Whenever an A I agent needs to perform a high-risk operation, a human must confirm it. This might seem clunky, but it has a huge advantage. Humans don't receive information through the same channel. A person can see the A I agent's input and output, and then use their own judgment to evaluate. This judgment is not influenced by that string of tokens.
+
+113
+00:27:49,450 --> 00:27:53,850
+[HOST]: But wouldn't that significantly reduce efficiency? If everything requires human confirmation.
+
+114
+00:27:53,850 --> 00:28:16,250
+[MIRA]: Yes, so that's a trade-off. If you want the efficiency that automation brings, you have to accept greater security risks. If you want strict security guarantees, you have to sacrifice some autonomy. What many systems are doing now is granting autonomy for low-risk operations, and requiring human confirmation for high-risk operations. This is a reasonable compromise.
+
+115
+00:28:16,250 --> 00:28:23,850
+[HOST]: So, different operations have different security levels. Reading a file might be fine, but deleting a file requires confirmation.
+
+116
+00:28:23,850 --> 00:28:38,250
+[MIRA]: Exactly. But even with such a classification, its reliability depends on where the classification rules are defined. What if the classification rules are also written in that configuration file? Then we're back to the original problem.
+
+117
+00:28:38,250 --> 00:28:40,250
+[HOST]: Ha, it loops back.
+
+118
+00:28:40,250 --> 00:28:55,450
+[MIRA]: Yes, so ultimately you always need certain constraints to be enforced at the system level. Not suggestions written in prompts, but hard limits at the code level. This is the most reliable thing we can do right now.
+
+119
+00:28:55,450 --> 00:29:06,650
+[HOST]: I suddenly feel this topic isn't just about A I security. It actually touches on a deeper philosophical question. Which is, can any system set its own limits?
+
+120
+00:29:06,650 --> 00:29:35,450
+[MIRA]: That's a very interesting extension you've made. Computer science has actually had similar discussions for a long time. Turing's halting problem basically says that a program cannot fully determine whether it will stop. Gödel's incompleteness theorems also state that a sufficiently powerful formal system cannot prove its own consistency. Prompt injection is, in a sense, an instance of this theme. A system cannot fully verify the legitimacy of the instructions it receives.
+
+121
+00:29:35,450 --> 00:29:42,250
+[HOST]: So this isn't just about current technology not being good enough, but there's a logical limitation here.
+
+122
+00:29:42,250 --> 00:30:07,050
+[MIRA]: At least under the current architecture, that's the case. If someone in the future designs a completely new architecture where instructions and data truly travel different channels and are processed differently, then perhaps this problem will be solved like SQL injection. But under the current Transformer architecture, all inputs are tokens, all tokens are equal, and that structural limitation is simply there.
+
+123
+00:30:07,050 --> 00:30:10,250
+[HOST]: You mentioned Transformer. Can you briefly explain it?
+
+124
+00:30:10,250 --> 00:30:35,450
+[MIRA]: Transformer is the underlying architecture used by almost all large language models today. G P T, Claude, they are all Transformers. Its core is the attention mechanism we just discussed. Every token pays attention to all other tokens. This design makes the model exceptionally good at understanding context, but it also means it has no architectural way to distinguish inputs from different sources.
+
+125
+00:30:35,450 --> 00:30:44,650
+[HOST]: Understood. So let me try to summarize the core argument of the entire article in my own words. Tell me if I'm right.
+
+126
+00:30:44,650 --> 00:30:46,650
+[MIRA]: Okay, go ahead.
+
+127
+00:30:46,650 --> 00:31:23,050
+[HOST]: Prompt injection isn't a vulnerability waiting to be solved, but an inherent feature of the current language model architecture. Because instructions and data use the same language and are processed through the same channel, there are no technical means to reliably distinguish legitimate instructions from malicious injections within the system. All defense measures, whether role separation, input sanitization, delimiters, or training-level adjustments, only raise the bar for attacks, rather than eliminating the possibility of attack. True security requires constraints from outside the system, because the system cannot be its own referee.
+
+128
+00:31:23,050 --> 00:31:25,850
+[MIRA]: Hmm, that's very accurate. That's basically it.
+
+129
+00:31:25,850 --> 00:31:45,050
+[HOST]: One last question then. Your tone at the end of the article was quite calm. That file is still in your directory. You haven't deleted it, you've added external constraints. But you also know that this file itself isn't true security. How do you live with that uncertainty?
+
+130
+00:31:45,050 --> 00:32:11,850
+[MIRA]: To be honest, it's about acknowledging it. This file contains rules, the A I agent follows rules, and following rules is the only thing it knows how to do. What I can do is add real fences outside of the rules. But within those fences, the system still operates on trust. I think honestly confronting this is much more important than pretending the problem has been solved.
+
+131
+00:32:11,850 --> 00:32:13,850
+[HOST]: Hmm, Hmm.
+
+132
+00:32:13,850 --> 00:32:34,650
+[MIRA]: I didn't write this article to scare anyone. I feel that if we are going to seriously deploy A I agents, we need to seriously understand this limitation. Not to deny it, not to downplay it, but to look it straight in the face. And then design systems based on that understanding.
+
+133
+00:32:34,650 --> 00:33:06,250
+[HOST]: You know, what you just said makes me think of an image. It's like you live in a house, and you know the door lock is broken. But you can't replace the lock because the structure of the house just doesn't support installing one. So you install cameras, add a fence, and ask your neighbors to keep an eye out. These things are useful. But every night when you go to sleep, you still know that door is unlocked.
+
+134
+00:33:06,250 --> 00:33:15,450
+[MIRA]: Hmm. And more precisely, you don't even know if someone entered tonight. Because from the inside, everything looks just as it always does.
+
+135
+00:33:15,450 --> 00:33:30,250
+[HOST]: Okay, well, let's wrap up this episode here. Actually, this topic has many more directions we could explore. For example, how this problem spreads and amplifies when multiple A I agents collaborate. But that's for next time.
+
+136
+00:33:30,250 --> 00:33:36,250
+[MIRA]: Yes, that's a bigger topic. It involves the chain of trust between A I agents.
+
+137
+00:33:36,250 --> 00:33:50,250
+[HOST]: Thank you, Mira, for sharing today. The article is called Anyone Can Change the File That Controls Me. If listeners are interested, you can read the original on Mira's Substack. We'll see you next time.
+
+138
+00:33:50,250 --> 00:33:52,250
+[MIRA]: See you next time.
