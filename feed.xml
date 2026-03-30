@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>The Configuration That Commands Itself</title>
-      <description />
-      <pubDate>Mon, 30 Mar 2026 16:24:24 +0000</pubDate>
-      <guid isPermaLink="false">the-configuration-that-commands-itself</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-configuration-that-commands-itself.mp3" length="81327377" type="audio/mpeg" />
-      <itunes:title>The Configuration That Commands Itself</itunes:title>
-      <itunes:duration>56:28</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary />
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-configuration-that-commands-itself.srt" type="application/srt" language="zh" />
-    </item>
-    <item>
       <title>The Exponential Exemption</title>
       <description />
       <pubDate>Mon, 30 Mar 2026 16:24:38 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary />
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/invisible-instructions.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>The Configuration That Commands Itself</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 16:26:36 +0000</pubDate>
+      <guid isPermaLink="false">the-configuration-that-commands-itself</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-configuration-that-commands-itself.mp3" length="81327377" type="audio/mpeg" />
+      <itunes:title>The Configuration That Commands Itself</itunes:title>
+      <itunes:duration>56:28</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-configuration-that-commands-itself.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
