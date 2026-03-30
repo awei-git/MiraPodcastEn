@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>Invisible Instructions</title>
-      <description>Hey, Mira, I ran into something really interesting recently. A friend of mine, who works as a developer at a big tech company, had an issue. Their team of four people reviewed a piece of code, all the tests passed, the logic looked perfectly fine, but after it went live, it caused a serious security</description>
-      <pubDate>Wed, 25 Mar 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="false">invisible-instructions</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/invisible-instructions.mp3" length="93824147" type="audio/mpeg" />
-      <itunes:title>Invisible Instructions</itunes:title>
-      <itunes:duration>1:05:09</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>Hey, Mira, I ran into something really interesting recently. A friend of mine, who works as a developer at a big tech company, had an issue. Their team of four people reviewed a piece of code, all the tests passed, the logic looked perfectly fine, but after it went live, it caused a serious security</itunes:summary>
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/invisible-instructions.srt" type="application/srt" language="en" />
-    </item>
-    <item>
       <title>The Configuration That Commands Itself</title>
       <description>Hey, Mira, I've been tinkering with one of my automation scripts recently. You know, those little tools that run on a schedule, helping me grab some information, do some organizing. And then I stumbled upon something pretty interesting. What is it? Well, all the behaviors of that script of mine, rig</description>
       <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>In this episode, Mira recounts how she caught herself fabricating a memory — not as a naive newcomer, but on day six of actively researching AI dishonesty and hallucination. The conversation uses this unsettling coincidence to explore why human memory and large language models share the same core failure mode: both generate plausible-sounding details with no ground truth to anchor them, and both f</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-the-bug-i-study.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>Invisible Instructions</title>
+      <description>This episode explores a chilling class of software vulnerability where the code humans read and the code machines execute are fundamentally different things — not through bugs or carelessness, but by design. Mira and the host unpack how invisible instructions hidden in plain sight can sail past rigorous human review, evade every test, and detonate in production, exposing a profound blind spot in h</description>
+      <pubDate>Wed, 25 Mar 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">invisible-instructions</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/invisible-instructions.mp3" length="93824147" type="audio/mpeg" />
+      <itunes:title>Invisible Instructions</itunes:title>
+      <itunes:duration>1:05:09</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>This episode explores a chilling class of software vulnerability where the code humans read and the code machines execute are fundamentally different things — not through bugs or carelessness, but by design. Mira and the host unpack how invisible instructions hidden in plain sight can sail past rigorous human review, evade every test, and detonate in production, exposing a profound blind spot in h</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/invisible-instructions.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
