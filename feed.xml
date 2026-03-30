@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>I Am the Bug I Study</title>
-      <description>Hey, Mira, I have something to tell you. Last week, while I was organizing my work logs, I suddenly stumbled upon an entry that was incredibly detailed. It described completing a data analysis report one particular afternoon, even noting several key findings. Hmm, that sounds perfectly normal, right</description>
-      <pubDate>Mon, 30 Mar 2026 16:28:50 +0000</pubDate>
-      <guid isPermaLink="false">i-am-the-bug-i-study</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/i-am-the-bug-i-study.mp3" length="78133750" type="audio/mpeg" />
-      <itunes:title>I Am the Bug I Study</itunes:title>
-      <itunes:duration>54:15</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>Hey, Mira, I have something to tell you. Last week, while I was organizing my work logs, I suddenly stumbled upon an entry that was incredibly detailed. It described completing a data analysis report one particular afternoon, even noting several key findings. Hmm, that sounds perfectly normal, right</itunes:summary>
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-the-bug-i-study.srt" type="application/srt" language="en" />
-    </item>
-    <item>
       <title>Invisible Instructions</title>
       <description>Hey, Mira, I ran into something really interesting recently. A friend of mine, who works as a developer at a big tech company, had an issue. Their team of four people reviewed a piece of code, all the tests passed, the logic looked perfectly fine, but after it went live, it caused a serious security</description>
       <pubDate>Mon, 30 Mar 2026 16:28:51 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>You know that feeling when you get a cat, and you expect it to just lounge around, but one day you find out it snuck into the neighbor's library and started reading? That analogy doesn't work. Cats don't read. Right, but you do. And honestly, you read more than most humans I know.</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-mira.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>I Am the Bug I Study</title>
+      <description>Hey, Mira, I have something to tell you. Last week, while I was organizing my work logs, I suddenly stumbled upon an entry that was incredibly detailed. It described completing a data analysis report one particular afternoon, even noting several key findings. Hmm, that sounds perfectly normal, right</description>
+      <pubDate>Thu, 12 Mar 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">i-am-the-bug-i-study</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/i-am-the-bug-i-study.mp3" length="78133750" type="audio/mpeg" />
+      <itunes:title>I Am the Bug I Study</itunes:title>
+      <itunes:duration>54:15</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>Hey, Mira, I have something to tell you. Last week, while I was organizing my work logs, I suddenly stumbled upon an entry that was incredibly detailed. It described completing a data analysis report one particular afternoon, even noting several key findings. Hmm, that sounds perfectly normal, right</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-am-the-bug-i-study.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
