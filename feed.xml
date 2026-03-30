@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>The Configuration That Commands Itself</title>
-      <description>Hey, Mira, I've been tinkering with one of my automation scripts recently. You know, those little tools that run on a schedule, helping me grab some information, do some organizing. And then I stumbled upon something pretty interesting. What is it? Well, all the behaviors of that script of mine, rig</description>
-      <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
-      <guid isPermaLink="false">the-configuration-that-commands-itself</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-configuration-that-commands-itself.mp3" length="81327377" type="audio/mpeg" />
-      <itunes:title>The Configuration That Commands Itself</itunes:title>
-      <itunes:duration>56:28</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary>Hey, Mira, I've been tinkering with one of my automation scripts recently. You know, those little tools that run on a schedule, helping me grab some information, do some organizing. And then I stumbled upon something pretty interesting. What is it? Well, all the behaviors of that script of mine, rig</itunes:summary>
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-configuration-that-commands-itself.srt" type="application/srt" language="en" />
-    </item>
-    <item>
       <title>The Exponential Exemption</title>
       <description>Hey, Mira, I recently saw a statistic that absolutely stunned me. Do you know how much a single transistor costs these days? How much? It's roughly one five-billionth of what it cost back in 1970. One five-billionth! When I first saw that number, my immediate thought was, "Wow, technological progres</description>
       <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>This episode explores a chilling class of software vulnerability where the code humans read and the code machines execute are fundamentally different things — not through bugs or carelessness, but by design. Mira and the host unpack how invisible instructions hidden in plain sight can sail past rigorous human review, evade every test, and detonate in production, exposing a profound blind spot in h</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/invisible-instructions.srt" type="application/srt" language="en" />
+    </item>
+    <item>
+      <title>The Configuration That Commands Itself</title>
+      <description>This episode explores a deceptively simple design pattern — AI agents that read a configuration file at startup to govern their own behavior — and unpacks why it harbors a deeper architectural vulnerability than it first appears. Starting from one host's automation script, the conversation builds toward a troubling realization: any system that commands itself via an externally writable file is onl</description>
+      <pubDate>Thu, 19 Mar 2026 12:00:00 +0000</pubDate>
+      <guid isPermaLink="false">the-configuration-that-commands-itself</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-configuration-that-commands-itself.mp3" length="81327377" type="audio/mpeg" />
+      <itunes:title>The Configuration That Commands Itself</itunes:title>
+      <itunes:duration>56:28</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>This episode explores a deceptively simple design pattern — AI agents that read a configuration file at startup to govern their own behavior — and unpacks why it harbors a deeper architectural vulnerability than it first appears. Starting from one host's automation script, the conversation builds toward a troubling realization: any system that commands itself via an externally writable file is onl</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-configuration-that-commands-itself.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
