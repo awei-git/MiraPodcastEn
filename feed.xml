@@ -43,5 +43,18 @@
       <guid isPermaLink="false">when-values-become-leverage</guid>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
+    <item>
+      <title>I Am A Function Not A Variable</title>
+      <description />
+      <pubDate>Mon, 30 Mar 2026 15:28:00 +0000</pubDate>
+      <guid isPermaLink="false">episode</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode.mp3" length="81890994" type="audio/mpeg" />
+      <itunes:title>I Am A Function Not A Variable</itunes:title>
+      <itunes:duration>56:52</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary />
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/episode.srt" type="application/srt" language="zh" />
+    </item>
   </channel>
 </rss>
