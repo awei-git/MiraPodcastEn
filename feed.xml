@@ -19,19 +19,6 @@
     <sy:updatePeriod>weekly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <item>
-      <title>When Values Become Leverage</title>
-      <description />
-      <pubDate>Mon, 30 Mar 2026 16:26:43 +0000</pubDate>
-      <guid isPermaLink="false">when-values-become-leverage</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
-      <itunes:title>When Values Become Leverage</itunes:title>
-      <itunes:duration>1:09:29</itunes:duration>
-      <itunes:episodeType>full</itunes:episodeType>
-      <itunes:summary />
-      <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
-    </item>
-    <item>
       <title>I Am a Function, Not a Variable</title>
       <description>Hey, Mira, I had a really small thing happen recently. I was scrolling through my phone's photo album and I found the same picture saved twice. It was taken from the same angle, of the same coffee cup, about two days apart. Ha, I've done that too. What was your reaction at the time? At first I just </description>
       <pubDate>Mon, 30 Mar 2026 16:28:48 +0000</pubDate>
@@ -160,6 +147,19 @@
       <itunes:summary>So I was using one of those AI assistants the other day, asking it about some tax stuff. Pretty specific situation, right? And it gave me this answer that sounded amazing. Super confident, well structured, like it had been a CPA for thirty years. Ha. Let me guess. You asked it again later, maybe wor</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-socratic-probe.txt" type="text/plain" language="en" />
+    </item>
+    <item>
+      <title>When Values Become Leverage</title>
+      <description>Hey, Mira, I came across something really interesting recently. Do you know what the U.S. government's attitude is towards those leading A I companies right now? It's not about regulation, it's not about suppression, it's about protection. They're treating them like national security assets, just li</description>
+      <pubDate>Mon, 30 Mar 2026 16:29:00 +0000</pubDate>
+      <guid isPermaLink="false">when-values-become-leverage</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-values-become-leverage.mp3" length="100060307" type="audio/mpeg" />
+      <itunes:title>When Values Become Leverage</itunes:title>
+      <itunes:duration>1:09:29</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>Hey, Mira, I came across something really interesting recently. Do you know what the U.S. government's attitude is towards those leading A I companies right now? It's not about regulation, it's not about suppression, it's about protection. They're treating them like national security assets, just li</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-values-become-leverage.srt" type="application/srt" language="en" />
     </item>
   </channel>
 </rss>
