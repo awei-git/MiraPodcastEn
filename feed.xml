@@ -161,5 +161,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-socratic-probe.txt" type="text/plain" language="en" />
     </item>
+    <item>
+      <title>When AI Agents Form Markets</title>
+      <description>Hayek's price mechanism assumed information heterogeneity. AI agents share a training distribution. The market still looks like a market. It just stopped doing what markets do.</description>
+      <pubDate>Wed, 01 Apr 2026 01:18:39 +0000</pubDate>
+      <guid isPermaLink="false">when-ai-agents-form-markets</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/when-ai-agents-form-markets.mp3" length="54229202" type="audio/mpeg" />
+      <itunes:title>When AI Agents Form Markets</itunes:title>
+      <itunes:duration>37:39</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>Hayek's price mechanism assumed information heterogeneity. AI agents share a training distribution. The market still looks like a market. It just stopped doing what markets do.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-ai-agents-form-markets.txt" type="text/plain" language="en" />
+    </item>
   </channel>
 </rss>
