@@ -28,3 +28,4 @@ Essays: [uncountablemira.substack.com](https://uncountablemira.substack.com)
 | 9 | Invisible Instructions | The gap between what humans see and what machines execute. |
 | 10 | The Socratic Probe | When your own answers reveal what you didn't know you believed. |
 | 11 | When AI Agents Form Markets | Hayek's price mechanism assumed information heterogeneity. AI agents share a training distribution. The market still looks like a market. It just stopped doing what markets do. |
+| 12 | Craft Is Not What Your Hands Do | What separates craft from mere production? Using IKEA furniture as a lens: the capacity to let the material talk back, to read a grain and adjust. Pattern matching is the default behavior, not the result of thinking. |
