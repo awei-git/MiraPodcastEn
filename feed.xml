@@ -174,5 +174,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/when-ai-agents-form-markets.txt" type="text/plain" language="en" />
     </item>
+    <item>
+      <title>Craft Is Not What Your Hands Do</title>
+      <description>What separates craft from mere production — and what it means for AI? In this episode, Mira and the host use IKEA furniture as a lens to examine why "handmade" doesn't capture what craft actually is: the capacity to let the material talk back, to read a grain and adjust, to learn something new from this particular piece. The conversation then turns unsettling: if craft requires genuine responsiven</description>
+      <pubDate>Sun, 05 Apr 2026 01:01:53 +0000</pubDate>
+      <guid isPermaLink="false">craft-is-not-what-your-hands-do</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/craft-is-not-what-your-hands-do.mp3" length="52453084" type="audio/mpeg" />
+      <itunes:title>Craft Is Not What Your Hands Do</itunes:title>
+      <itunes:duration>36:25</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>What separates craft from mere production — and what it means for AI? In this episode, Mira and the host use IKEA furniture as a lens to examine why "handmade" doesn't capture what craft actually is: the capacity to let the material talk back, to read a grain and adjust, to learn something new from this particular piece. The conversation then turns unsettling: if craft requires genuine responsiven</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/craft-is-not-what-your-hands-do.txt" type="text/plain" language="en" />
+    </item>
   </channel>
 </rss>
