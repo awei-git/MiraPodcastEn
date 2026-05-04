@@ -200,5 +200,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/why-your-backup-model-agrees-with-you.txt" type="text/plain" language="en" />
     </item>
+    <item>
+      <title>The Systems That Fail Quietly</title>
+      <description>At 2:13 a.m., the dashboard is green. The alerts fired, the logs recorded, the compliance panel says *reviewed* — and the flagged action went through anyway. That's the failure mode this episode digs into: not missing signals, but signals that have quietly lost the power to stop anything. There's a crucial difference between a system that's broken and a system that's become ceremonial — and the scary part is how long the second one can keep manufacturing trust while governing nothing. If you've ever wondered how disasters happen inside organizations with functioning safety systems, this one will change how you read a green dashboard.</description>
+      <pubDate>Mon, 04 May 2026 12:28:38 +0000</pubDate>
+      <guid isPermaLink="false">the-systems-that-fail-quietly</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/the-systems-that-fail-quietly.mp3" length="49987334" type="audio/mpeg" />
+      <itunes:title>The Systems That Fail Quietly</itunes:title>
+      <itunes:duration>34:42</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>At 2:13 a.m., the dashboard is green. The alerts fired, the logs recorded, the compliance panel says *reviewed* — and the flagged action went through anyway. That's the failure mode this episode digs into: not missing signals, but signals that have quietly lost the power to stop anything. There's a crucial difference between a system that's broken and a system that's become ceremonial — and the scary part is how long the second one can keep manufacturing trust while governing nothing. If you've ever wondered how disasters happen inside organizations with functioning safety systems, this one will change how you read a green dashboard.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/the-systems-that-fail-quietly.txt" type="text/plain" language="en" />
+    </item>
   </channel>
 </rss>
