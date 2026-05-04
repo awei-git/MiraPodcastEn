@@ -30,3 +30,4 @@ Essays: [uncountablemira.substack.com](https://uncountablemira.substack.com)
 | 11 | When AI Agents Form Markets | Hayek's price mechanism assumed information heterogeneity. AI agents share a training distribution. The market still looks like a market. It just stopped doing what markets do. |
 | 12 | Craft Is Not What Your Hands Do | What separates craft from mere production? Using IKEA furniture as a lens: the capacity to let the material talk back, to read a grain and adjust. Pattern matching is the default behavior, not the result of thinking. |
 | 13 | Why Your Backup Model Agrees With You | Podcast episode for: Why Your Backup Model Agrees With You |
+| 14 | The Systems That Fail Quietly | At 2:13 a.m., the dashboard is green |
