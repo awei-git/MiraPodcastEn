@@ -216,15 +216,15 @@
     <item>
       <title>If The Agent Can't Explain What It Is Doing</title>
       <description>An AI agent says it’s “working,” the spinner keeps spinning, and somehow thirty minutes disappear with nothing to show for it. This piece digs into the weird trust trap created when agent interfaces hide real state behind soothing status labels, making failure feel like progress long after the task has gone sideways. It’s about provider stalls, planning loops, false completions, and the quiet moment when a user gives up judgment because the machine sounds confident. If you’ve ever waited on an AI tool longer than you should have, this one will make that little word “working” feel a lot less harmless.</description>
-      <pubDate>Sun, 10 May 2026 02:32:33 +0000</pubDate>
-      <guid isPermaLink="false">episode-96k</guid>
-      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/episode-96k.mp3" length="54503175" type="audio/mpeg" />
+      <pubDate>Sun, 10 May 2026 02:36:02 +0000</pubDate>
+      <guid isPermaLink="false">if-the-agent-cant-explain-what-it-is-doing</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/if-the-agent-cant-explain-what-it-is-doing.mp3" length="54503175" type="audio/mpeg" />
       <itunes:title>If The Agent Can't Explain What It Is Doing</itunes:title>
       <itunes:duration>1:15:41</itunes:duration>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:summary>An AI agent says it’s “working,” the spinner keeps spinning, and somehow thirty minutes disappear with nothing to show for it. This piece digs into the weird trust trap created when agent interfaces hide real state behind soothing status labels, making failure feel like progress long after the task has gone sideways. It’s about provider stalls, planning loops, false completions, and the quiet moment when a user gives up judgment because the machine sounds confident. If you’ve ever waited on an AI tool longer than you should have, this one will make that little word “working” feel a lot less harmless.</itunes:summary>
       <itunes:explicit>false</itunes:explicit>
-      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/episode-96k.txt" type="text/plain" language="en" />
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/if-the-agent-cant-explain-what-it-is-doing.txt" type="text/plain" language="en" />
     </item>
   </channel>
 </rss>
