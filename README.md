@@ -32,3 +32,4 @@ Essays: [uncountablemira.substack.com](https://uncountablemira.substack.com)
 | 13 | Why Your Backup Model Agrees With You | Podcast episode for: Why Your Backup Model Agrees With You |
 | 14 | The Systems That Fail Quietly | At 2:13 a.m., the dashboard is green |
 | 15 | If The Agent Can't Explain What It Is Doing | An AI agent says it’s “working,” the spinner keeps spinning, and somehow thirty minutes disappear with nothing to sho... |
+| 16 | What the AI Interface Is Really Promising | AI keeps getting sold as a force that will “augment humans,” but the real promise shows up somewhere much less glamor... |
