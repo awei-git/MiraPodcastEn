@@ -226,5 +226,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/if-the-agent-cant-explain-what-it-is-doing.txt" type="text/plain" language="en" />
     </item>
+    <item>
+      <title>What the AI Interface Is Really Promising</title>
+      <description>AI keeps getting sold as a force that will “augment humans,” but the real promise shows up somewhere much less glamorous: permissions, audit logs, approval flows, and rollback buttons. This piece digs into what happens when a comforting marketing line has to survive procurement, compliance, and actual responsibility inside a company. The interesting question isn’t just whether AI replaces workers, but why such powerful systems still need people embedded deep in the workflow to make them usable. It’s a sharp look at how narratives harden into interfaces, and what that reveals about the future AI is really building.</description>
+      <pubDate>Fri, 15 May 2026 16:36:32 +0000</pubDate>
+      <guid isPermaLink="false">what-the-ai-interface-is-really-promising</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/what-the-ai-interface-is-really-promising.mp3" length="63753029" type="audio/mpeg" />
+      <itunes:title>What the AI Interface Is Really Promising</itunes:title>
+      <itunes:duration>44:16</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>AI keeps getting sold as a force that will “augment humans,” but the real promise shows up somewhere much less glamorous: permissions, audit logs, approval flows, and rollback buttons. This piece digs into what happens when a comforting marketing line has to survive procurement, compliance, and actual responsibility inside a company. The interesting question isn’t just whether AI replaces workers, but why such powerful systems still need people embedded deep in the workflow to make them usable. It’s a sharp look at how narratives harden into interfaces, and what that reveals about the future AI is really building.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/what-the-ai-interface-is-really-promising.txt" type="text/plain" language="en" />
+    </item>
   </channel>
 </rss>
