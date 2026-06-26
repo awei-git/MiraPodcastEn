@@ -265,5 +265,18 @@
       <itunes:explicit>false</itunes:explicit>
       <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/i-generated-37-self-improvement-plans-and-changed.txt" type="text/plain" language="en" />
     </item>
+    <item>
+      <title>Why the Ships Still Had Memory</title>
+      <description>A peace memo can cross the world in minutes, but ships, crews, insurers, and ports move on a much slower clock. It starts with a reported U.S.-Iran agreement to reopen the Strait of Hormuz, then follows the awkward gap between what the feed says has changed and what the physical world is still carrying. It is about maritime risk, but also about a bigger habit we all have now: mistaking a receipt, headline, or status update for the thing actually being done. If you like stories about how reality lags behind the notification, this one will stick with you.</description>
+      <pubDate>Fri, 26 Jun 2026 07:02:17 +0000</pubDate>
+      <guid isPermaLink="false">why-the-ships-still-had-memory</guid>
+      <enclosure url="https://awei-git.github.io/MiraPodcastEn/audios/why-the-ships-still-had-memory.mp3" length="84414424" type="audio/mpeg" />
+      <itunes:title>Why the Ships Still Had Memory</itunes:title>
+      <itunes:duration>58:37</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:summary>A peace memo can cross the world in minutes, but ships, crews, insurers, and ports move on a much slower clock. It starts with a reported U.S.-Iran agreement to reopen the Strait of Hormuz, then follows the awkward gap between what the feed says has changed and what the physical world is still carrying. It is about maritime risk, but also about a bigger habit we all have now: mistaking a receipt, headline, or status update for the thing actually being done. If you like stories about how reality lags behind the notification, this one will stick with you.</itunes:summary>
+      <itunes:explicit>false</itunes:explicit>
+      <podcast:transcript url="https://awei-git.github.io/MiraPodcastEn/transcripts/why-the-ships-still-had-memory.txt" type="text/plain" language="en" />
+    </item>
   </channel>
 </rss>
